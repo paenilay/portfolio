@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Demonstration & Overview</title>
+    <style>
+        /* Base Modern Design Variables */
+        :root {
+            --bg-color: #f8f9fa;
+            --surface-color: #ffffff;
+            --text-main: #212529;
+            --text-muted: #6c757d;
+            --accent-color: #0d6efd;
+            --border-color: #dee2e6;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Reset and Layout */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Professional Header */
+        header {
+            background-color: #1a1d20;
+            color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .header-container {
+            max-width: 1300px; /* Aligned with the large main container */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .meta-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #e9ecef;
+        }
+
+        /* Large Main Container for Bigger Video Display */
+        main {
+            max-width: 1300px; /* Expanded from 900px to make everything significantly larger */
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Project Intro Typography */
+        .project-intro {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #111215;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .project-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Video Wrapper & Component Styling */
+        .video-wrapper {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        /* The HTML5 Video Element */
+        video {
+            display: block;
+            width: 100%; /* Spans 100% of the new 1300px wide container */
+            height: auto;
+            aspect-ratio: 16 / 9; /* Maintains pristine widescreen proportion */
+            background-color: #000000;
+            outline: none;
+        }
+
+        /* Project Information Details Section */
+        .details-section {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bg-color);
+            color: #111215;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-card h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .detail-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            background-color: #ffffff;
+            margin-top: 4rem;
+        }
+
+        /* Responsive handling for mobile screens */
+        @media (max-width: 768px) {
+            .project-title { font-size: 1.8rem; }
+            .details-section { padding: 1.5rem; }
+            main { margin: 1.5rem auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">OHNMAR AUNG</div>
+            <div class="meta-tag">NEVER STOP LEARNING</div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="project-intro">
+            <h1 class="project-title">HUMAN RESOURCE DEPARTMENT DASHBOARD</h1>
+            <p class="project-subtitle">The dashboard provides management with real-time insights into workforce utilization, attendance patterns, and staffing trends, supporting efficient HR planning and operational decision-making.
+
+</p>
+        </section>
+
+        <div class="video-wrapper">
+            <video src="images/hr.mp4" controls preload="metadata">
+                Your browser does not support the video tag or codec layout. Please download the file directly.
+            </video>
+        </div>
+
+       <!-- Accompanying Context/Details Documentation -->
+        <section class="details-section">
+            <h2 class="section-title">Key Demonstration Insights</h2>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h4>01 / Workforce Utilization</h4>
+                    <p>Enables accurate capacity monitoring by mapping real-time operational seat allocations against unique daily capacity limits. This prevents bottlenecking and ensures optimal team coverage across shifting project baselines.</p>
+                </div>
+                <div class="detail-card">
+                    <h4>02 / Attendance Patterns</h4>
+                    <p>Tracks historical availability trends, absenteeism baselines, and shift compliance data to pinpoint cyclical operational risks. This insight allows management to proactively address scheduling friction before it affects delivery timelines.</p>
+                </div>
+                <div class="detail-card">
+                    <h4>03 / Staffing Trends & Planning</h4>
+                    <p>Surfaces structural resource gaps and attrition signals across departments, giving leadership clear visibility into future staffing demands. These metrics turn reactive hiring into a planned, business-aligned strategy.</p>
+                </div>
+            </div>
+
+            <div class="detail-card" style="margin-top: 1rem;">
+                <h4>Dashboard Capabilities & Analytics Stack</h4>
+                <p style="font-family: monospace; background: #f1f3f5; padding: 0.75rem; border-radius: 6px; margin-top: 0.5rem; font-size: 0.9rem;">
+                    Relational Workforce Database / Power BI Infrastructure / Dynamic Capacity Filters / Data Pipeline Automation
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; NEVER STOP LEARNING.</p>
+    </footer>
+
+</body>
+</html>
